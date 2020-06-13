@@ -17,9 +17,9 @@ public class SQLConnection {
    
       Connection cn=null;
         try {
-            Class.forName("org.sqlite.JDBC");
+            Class.forName("add lie");//for exp org.sqlite.JDBC
             
-            cn=DriverManager.getConnection("jdbc:sqlite:Add Database path");
+            cn=DriverManager.getConnection("Add Database path");// jdbc:sql:filename
             
 //            System.out.println("Connected....");
         } catch (Exception e) {

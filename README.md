@@ -5,7 +5,8 @@
 
 
 ## Create Database Tables
-** Registration **
+**Registration**
+---
 CREATE TABLE Registration(UserName varchar(50) PRIMARY KEY,
 Email varchar(25) not null UNIQUE,
 Addre varchar(50) not null,
@@ -15,7 +16,8 @@ UPassword varchar(120) not null,
 RTimestamp datetime DEFAULT CURRENT_TIMESTAMP  
 );
 
-** Patient **
+**Patient**
+---
 CREATE TABLE Patient(Patient_ID INTEGER PRIMARY KEY AUTOINCREMENT,
 Patient_Name varchar(50),
 Phone_Number varchar(10),
@@ -25,7 +27,8 @@ Disease varchar(50),
 Total_Price float
 );
 
-** Products like(Ayurvedic,Medicine,Cosmetic) **
+**Products like(Ayurvedic,Medicine,Cosmetic)**
+---
 CREATE TABLE Products (
 	Product_id	INTEGER PRIMARY KEY AUTOINCREMENT,
 	Product_Name	varchar(120) NOT NULL UNIQUE,
@@ -38,7 +41,8 @@ CREATE TABLE Products (
 	PTimestamp	datetime DEFAULT CURRENT_TIMESTAMP
 );
 
-** Bill **
+**Bill**
+---
 CREATE TABLE Bill(Bill_id INTEGER PRIMARY KEY AUTOINCREMENT,
 Patient_Name varchar(120) NOT NULL,
 Phone_Number varchar(10) NOT NULL,
@@ -49,7 +53,7 @@ Patient_ID INTEGER REFERENCES Patient(Patient_ID) ,
 Timestamp datetime DEFAULT CURRENT_TIMESTAMP
 );
 
-** Add path in SQLConnection file**
+**Add path in SQLConnection file**
 
 
-##### Thank You
+#### Thank You
