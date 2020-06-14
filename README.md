@@ -54,6 +54,9 @@ Timestamp datetime DEFAULT CURRENT_TIMESTAMP
 );
 
 **Add path in SQLConnection file**
+>  for Example Class.forName("oracle.jdbc.driver.OracleDriver"); 
 
+> for Example Connection con=DriverManager.getConnection(  
+"jdbc:oracle:thin:@localhost:1521:xe","system","password");
 
 #### Thank You
